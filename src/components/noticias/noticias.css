@@ -14,12 +14,14 @@
     padding: 0;
     width: 100%; */
     display: flex;
+    padding-top: 20px;
 }
 
 .img-noticia {
     max-width: 500px;
     max-height: 280px;
-    object-fit: cover;    
+    object-fit: cover;   
+    padding-left: 50px; 
 }
 
 
@@ -29,7 +31,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 5px;
+    margin: 0 5px;
+    text-align: center;
+    padding-left: 30px;
 }
 .info-noticia h1{
     font-weight: bold;
@@ -47,14 +51,12 @@
 a{
     color: var(--DetailsColor2);
 }
-
-.titulo{
-    margin: 55px 0px 0px 0px;
-    margin-left: 70px;
+.titulo-noticia{
+    margin: 0px 0px 0px 50px;
     color: gold;
-    font-family:'Alumni Sans', sans-serif;
-    /* border-top: 3px solid black; Se reemplaza por hr*/
+    
 }
+
 
 @media screen and (max-width: 50rem) {
 
@@ -70,6 +72,18 @@ a{
     .titulo{
         text-align: center;
     }
+    .titulo-noticia{
+        margin: 20px 0px 0px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: gold;
+        font-family:'Alumni Sans', sans-serif;
+        
+    }
+    .img-noticia {
+        width: 500px;
+}
 }
 
 
@@ -79,7 +93,7 @@ a{
         flex-direction: column;
         align-items: center;
     }
-    
+   
 }
 /* Lo pisa la clase .hr de otro componente */
 /* .hr {

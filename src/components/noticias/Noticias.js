@@ -5,8 +5,8 @@ import './noticias.css'
 export const Noticias = () => {
   return (
     <>
-    <div className='titulo'>
-      <h1>NOTICIAS</h1>
+   
+      <h1 className='titulo-noticia'>NOTICIAS</h1>
       <div className='contenedor-noticia'>
         <div className= 'img'>
           <img className='img-noticia' src={ imagen } alt='imagen de videojuego Californication' />
@@ -21,7 +21,7 @@ export const Noticias = () => {
 
     </div>
 
-    </div>
+
     <hr className='hr'/>
     </>
   )
